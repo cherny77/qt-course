@@ -38,9 +38,6 @@ void AddShowEditDialog::init() {
     ui->phoneWarningLabel->setVisible(false);
     ui->listWidget->setContextMenuPolicy(Qt::CustomContextMenu);
 
-       connect(ui->listWidget, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(slotEditRecord()));
-       connect(ui->listWidget, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotCustomMenuRequested(QPoint)));
-
     switch (_mode) {
     case ADD:
                break;
